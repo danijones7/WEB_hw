@@ -5,7 +5,8 @@
 // Необходимо у пользователя запросить имя и вызвать функцию greeting, передав туда полученное от пользователя значение.
 
 function greeting(name) {
-    return (`Hello, ${name}!`);
+    console.log(`Hello, ${name}!`);
 }
 const username = prompt("Enter your name: ");
-alert(greeting(username))
+greeting(username);  // не будет выводить на стр, выведет в консоли (режим разработчика) 
+// console.log(`Hello, ${username}!`);
